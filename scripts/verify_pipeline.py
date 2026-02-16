@@ -1,17 +1,21 @@
-import requests
-import time
-import os
-import sys
+from dotenv import load_dotenv
+
+# Load secrets from secrets.env in the root if it exists
+# We look for secrets.env two levels up from this script (scripts/ -> root)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.dirname(script_dir)
+load_dotenv(os.path.join(root_dir, "secrets.env"))
 
 API_URL = "http://localhost:8000"
-API_KEY = "sk-proj-test-key-placeholder" # Dummy key for testing (pipeline uses it but openai calls will fail if invalid, but we can test flow up to error)
-# Note: To fully verify, we need a valid key or mock the LLM. 
-# For now, we use the key provided in the design doc if possible, or expect 500/401 from OpenAI.
-# The user provided a key in SecondDesignDoc.md. 
+API_KEY = "sk-proj-test-key-placeholder" 
 
-REAL_API_KEY = ""
+# Use the key from the environment variable (secrets.env) if available
+REAL_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 def run_verification():
+    if not REAL_API_KEY:
+        print("WARNING: OPENAI_API_KEY not found in secrets.env. The analysis step will likely fail.")
+        print("Please create a 'secrets.env' file in the project root with OPENAI_API_KEY=sk-...")
     print("Starting verification...")
     
     # 1. Create a dummy test file
