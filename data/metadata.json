@@ -1,0 +1,14 @@
+{
+  "test_book": {
+    "id": "test_book",
+    "title": "test_book",
+    "graph_file": "../data/test_book\\graph.json",
+    "timestamp": 1771280195.0194485
+  },
+  "The Six Swans": {
+    "id": "The Six Swans",
+    "title": "The Six Swans",
+    "graph_file": "../data/The Six Swans\\graph.json",
+    "timestamp": 1771281322.132444
+  }
+}

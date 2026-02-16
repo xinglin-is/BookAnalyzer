@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "type": "Person",
+      "description": "A wizard and the main character of the story.",
+      "group": 1,
+      "id": "Harry Potter"
+    },
+    {
+      "type": "Person",
+      "description": "Harry Potter's friend and a fellow student at Hogwarts.",
+      "group": 1,
+      "id": "Ron Weasley"
+    },
+    {
+      "type": "Person",
+      "description": "Harry Potter's friend and a fellow student at Hogwarts.",
+      "group": 1,
+      "id": "Hermione Granger"
+    },
+    {
+      "type": "Location",
+      "description": "The school for wizards where Harry, Ron, and Hermione study.",
+      "group": 1,
+      "id": "Hogwarts"
+    }
+  ],
+  "links": [
+    {
+      "type": "friend",
+      "description": "Harry Potter and Ron Weasley are friends.",
+      "weight": 1,
+      "source": "Harry Potter",
+      "target": "Ron Weasley"
+    },
+    {
+      "type": "friend",
+      "description": "Harry Potter and Hermione Granger are friends.",
+      "weight": 1,
+      "source": "Harry Potter",
+      "target": "Hermione Granger"
+    },
+    {
+      "type": "student",
+      "description": "Harry Potter is a student at Hogwarts.",
+      "weight": 1,
+      "source": "Harry Potter",
+      "target": "Hogwarts"
+    },
+    {
+      "type": "friend",
+      "description": "Ron Weasley and Hermione Granger are friends.",
+      "weight": 1,
+      "source": "Ron Weasley",
+      "target": "Hermione Granger"
+    },
+    {
+      "type": "student",
+      "description": "Ron Weasley is a student at Hogwarts.",
+      "weight": 1,
+      "source": "Ron Weasley",
+      "target": "Hogwarts"
+    },
+    {
+      "type": "student",
+      "description": "Hermione Granger is a student at Hogwarts.",
+      "weight": 1,
+      "source": "Hermione Granger",
+      "target": "Hogwarts"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "nodes": [
+    {
+      "type": "Person",
+      "description": "A certain King who was hunting in a great forest and lost his way.",
+      "group": 1,
+      "id": "King"
+    },
+    {
+      "type": "Person",
+      "description": "A Witch who offers to help the King find his way out of the forest in exchange for her daughter's hand in marriage.",
+      "group": 1,
+      "id": "Old Woman"
+    },
+    {
+      "type": "Person",
+      "description": "The beautiful daughter of the Old Woman whom the King is asked to marry.",
+      "group": 1,
+      "id": "Daughter"
+    },
+    {
+      "type": "Person",
+      "description": "The King's first wife, with whom he had seven children.",
+      "group": 1,
+      "id": "First Wife"
+    },
+    {
+      "type": "Person",
+      "description": "The King's seven children, six boys and a girl, whom he loves dearly.",
+      "group": 1,
+      "id": "Children"
+    },
+    {
+      "type": "Person",
+      "description": "A Wise Woman who gives the King a ball of yarn to help him find a hidden path.",
+      "group": 1,
+      "id": "Wise Woman"
+    },
+    {
+      "type": "Person",
+      "description": "The ruler who wishes to marry the Queen and defends her against accusations.",
+      "group": 1,
+      "id": "The King"
+    },
+    {
+      "type": "Person",
+      "description": "The King\u2019s wife, who is beautiful but cannot speak, and is falsely accused of being a man-eater.",
+      "group": 1,
+      "id": "The Queen"
+    },
+    {
+      "type": "Person",
+      "description": "The King's children who are transformed into swans by the Queen's magic.",
+      "group": 1,
+      "id": "The Children"
+    },
+    {
+      "type": "Person",
+      "description": "The only child who remains with the King after her brothers are transformed.",
+      "group": 1,
+      "id": "The Little Girl"
+    },
+    {
+      "type": "Person",
+      "description": "A girl who seeks her brothers and is determined to find them.",
+      "group": 1,
+      "id": "The poor girl"
+    },
+    {
+      "type": "Person",
+      "description": "Six brothers who have been transformed into Swans and are under a curse.",
+      "group": 1,
+      "id": "The brothers"
+    },
+    {
+      "type": "Location",
+      "description": "A hut in the forest where the girl finds her brothers.",
+      "group": 1,
+      "id": "The forest-hut"
+    },
+    {
+      "type": "Person",
+      "description": "Potential threats to the girl if they find her in the forest-hut.",
+      "group": 1,
+      "id": "The robbers"
+    },
+    {
+      "type": "Person",
+      "description": "A determined young woman who resolves to save her brothers, even at the cost of her life.",
+      "group": 1,
+      "id": "The Maiden"
+    },
+    {
+      "type": "Person",
+      "description": "The maiden's siblings who have been transformed into swans.",
+      "group": 1,
+      "id": "The Brothers"
+    },
+    {
+      "type": "Person",
+      "description": "Servants of the King who find and bring the maiden to him.",
+      "group": 1,
+      "id": "The Huntsmen"
+    },
+    {
+      "type": "Location",
+      "description": "The setting where the maiden sits in a tree and where the King is hunting.",
+      "group": 1,
+      "id": "The Forest"
+    },
+    {
+      "type": "Person",
+      "description": "The King's mother who disapproves of the Queen and falsely accuses her.",
+      "group": 1,
+      "id": "The wicked mother"
+    },
+    {
+      "type": "Person",
+      "description": "The first child born to the Queen, who is taken away by the wicked mother.",
+      "group": 1,
+      "id": "The first child"
+    },
+    {
+      "type": "Person",
+      "description": "The second child born to the Queen, who is also taken away by the wicked mother.",
+      "group": 1,
+      "id": "The second child"
+    },
+    {
+      "type": "Person",
+      "description": "The third child born to the Queen, who is taken away by the wicked mother.",
+      "group": 1,
+      "id": "The third child"
+    },
+    {
+      "type": "Person",
+      "description": "The main female character who is accused and later proves her innocence.",
+      "group": 1,
+      "id": "Queen"
+    },
+    {
+      "type": "Person",
+      "description": "The Queen's brothers who are transformed into swans and are saved by her.",
+      "group": 1,
+      "id": "Six Swans"
+    }
+  ],
+  "links": [
+    {
+      "type": "transactional",
+      "description": "The King agrees to marry the Old Woman's daughter in exchange for guidance out of the forest.",
+      "weight": 2,
+      "source": "King",
+      "target": "Old Woman"
+    },
+    {
+      "type": "marriage",
+      "description": "The King marries the Daughter of the Old Woman.",
+      "weight": 1,
+      "source": "King",
+      "target": "Daughter"
+    },
+    {
+      "type": "former spouse",
+      "description": "The King was previously married to the First Wife.",
+      "weight": 1,
+      "source": "King",
+      "target": "First Wife"
+    },
+    {
+      "type": "parent-child",
+      "description": "The King is the father of the seven Children.",
+      "weight": 1,
+      "source": "King",
+      "target": "Children"
+    },
+    {
+      "type": "mentor",
+      "description": "The Wise Woman provides the King with a magical ball of yarn to help him navigate.",
+      "weight": 1,
+      "source": "King",
+      "target": "Wise Woman"
+    },
+    {
+      "type": "spouse",
+      "description": "The Queen is married to the King.",
+      "weight": 1,
+      "source": "King",
+      "target": "Queen"
+    },
+    {
+      "type": "parent-child",
+      "description": "The Old Woman is the mother of the Daughter.",
+      "weight": 1,
+      "source": "Old Woman",
+      "target": "Daughter"
+    },
+    {
+      "type": "enemy",
+      "description": "The Old Woman falsely accuses the Queen and takes her children.",
+      "weight": 1,
+      "source": "Old Woman",
+      "target": "Queen"
+    },
+    {
+      "type": "spouse",
+      "description": "The King is married to the Queen.",
+      "weight": 2,
+      "source": "The King",
+      "target": "The Queen"
+    },
+    {
+      "type": "parent",
+      "description": "The King is the father of the children.",
+      "weight": 1,
+      "source": "The King",
+      "target": "The Children"
+    },
+    {
+      "type": "child",
+      "description": "The Little Girl is one of the King's children who remains with him.",
+      "weight": 1,
+      "source": "The King",
+      "target": "The Little Girl"
+    },
+    {
+      "type": "love",
+      "description": "The King falls in love with the maiden due to her beauty.",
+      "weight": 1,
+      "source": "The King",
+      "target": "The Maiden"
+    },
+    {
+      "type": "authority",
+      "description": "The King commands the huntsmen to find and bring the maiden to him.",
+      "weight": 1,
+      "source": "The King",
+      "target": "The Huntsmen"
+    },
+    {
+      "type": "antagonist",
+      "description": "The Queen transforms her children into swans.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The Children"
+    },
+    {
+      "type": "antagonistic",
+      "description": "The wicked mother disapproves of the Queen and falsely accuses her of being a man-eater.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The wicked mother"
+    },
+    {
+      "type": "parent",
+      "description": "The Queen is the mother of the first child.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The first child"
+    },
+    {
+      "type": "parent",
+      "description": "The Queen is the mother of the second child.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The second child"
+    },
+    {
+      "type": "parent",
+      "description": "The Queen is the mother of the third child.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The third child"
+    },
+    {
+      "type": "sibling",
+      "description": "The Queen is the sister of her brothers whom she saves from enchantment.",
+      "weight": 1,
+      "source": "The Queen",
+      "target": "The brothers"
+    },
+    {
+      "type": "sibling",
+      "description": "The Little Girl is a sister to the other children who were transformed.",
+      "weight": 1,
+      "source": "The Children",
+      "target": "The Little Girl"
+    },
+    {
+      "type": "sibling",
+      "description": "The girl is the sister of the six brothers.",
+      "weight": 3,
+      "source": "The poor girl",
+      "target": "The brothers"
+    },
+    {
+      "type": "threat",
+      "description": "The robbers pose a danger to the girl if they discover her presence in their shelter.",
+      "weight": 1,
+      "source": "The poor girl",
+      "target": "The robbers"
+    },
+    {
+      "type": "sibling",
+      "description": "The maiden is determined to save her brothers who have been transformed into swans.",
+      "weight": 1,
+      "source": "The Maiden",
+      "target": "The Brothers"
+    },
+    {
+      "type": "captor",
+      "description": "The huntsmen capture the maiden from the tree and bring her before the King.",
+      "weight": 1,
+      "source": "The Maiden",
+      "target": "The Huntsmen"
+    },
+    {
+      "type": "sibling",
+      "description": "The Queen is the sister of the six brothers who were transformed into swans.",
+      "weight": 1,
+      "source": "Queen",
+      "target": "Six Swans"
+    }
+  ]
+}

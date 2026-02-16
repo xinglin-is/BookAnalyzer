@@ -1,0 +1,28 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+*.log
+
+# Design Docs (excluded as requested)
+InitialDesignDocs/
+
+# Python / Backend
+backend/venv/
+backend/__pycache__/
+backend/.env
+*.pyc
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# Data / Generated Artifacts
+data/faiss_indexes/
+data/output_graphs/
+data/books/*.pdf
+data/books/*.txt
+# Keep the books directory structure but ignore content inside
+!data/books/.gitkeep
