@@ -4,12 +4,12 @@ import os
 import sys
 
 API_URL = "http://localhost:8000"
-API_KEY = "sk-proj-test-key" # Dummy key for testing (pipeline uses it but openai calls will fail if invalid, but we can test flow up to error)
+API_KEY = "sk-proj-test-key-placeholder" # Dummy key for testing (pipeline uses it but openai calls will fail if invalid, but we can test flow up to error)
 # Note: To fully verify, we need a valid key or mock the LLM. 
 # For now, we use the key provided in the design doc if possible, or expect 500/401 from OpenAI.
 # The user provided a key in SecondDesignDoc.md. 
 
-REAL_API_KEY = "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"
+REAL_API_KEY = ""
 
 def run_verification():
     print("Starting verification...")
